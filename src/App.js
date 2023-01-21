@@ -1,7 +1,13 @@
+import header from './Components/Header/Header.js'
+
 export default class {
 
 	render(){
-		return 'Application'
+		let headerComponent = header('Rock Scissor Paper')
+		return (`
+			${headerComponent}
+			Application
+		`)
 	}
 
 }
