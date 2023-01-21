@@ -4,7 +4,7 @@ export default () => {
 	return `
 		<div class="wrapper">
 			<div class="panel"></div>
-			<button class="start" onclick="start">Start</button>
+			<button class="start" onclick="app.start(event)">Start</button>
 		</div>
 	`
 }

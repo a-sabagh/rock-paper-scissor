@@ -4,6 +4,10 @@ import panel from './Components/Panel/Panel.js'
 
 export default class {
 
+	start = (event) => {
+		alert('starting...')
+	}
+
 	render(){
 		let headerComponent = header('Rock Scissor Paper')
 		let footerComponent = footer('All Right Reserved 2023')
