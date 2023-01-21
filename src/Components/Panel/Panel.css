@@ -1,0 +1,30 @@
+.wrapper {
+	text-align: center;
+}
+.panel {
+	width: 500px;
+	height: 400px;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	margin: 3em auto 1em;
+}
+button{
+	color: #212529;
+	background-color: #ffc107;
+	border-color: #ffc107;
+	display: inline-block;
+	font-weight: 400;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border: 1px solid transparent;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	cursor: pointer;
+	border-radius: .25rem;
+}
