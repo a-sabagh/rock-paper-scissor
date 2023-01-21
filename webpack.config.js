@@ -27,12 +27,17 @@ module.exports = {
 					}
 				}
 			},
+			{
+				test: /\.(png|jpg)$/i,
+				use: 'file-loader',
+			},
 		]
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
-			template: './src/index.html',
 			title: 'Rock Paper Scissor',
+			favicon: './src/images/favicon.png',
+			template: './src/index.html',
 		}),
 		new MiniCssExtractPlugin(),
 	]
