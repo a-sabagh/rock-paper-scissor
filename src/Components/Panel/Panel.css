@@ -4,7 +4,10 @@
 .panel {
 	width: 500px;
 	height: 400px;
-	border: 1px solid #eee;
+	border: 1px solid #ddd;
+	box-shadow: 0px 0px 20px 1px rgba(102,102,102,0.75);
+	-webkit-box-shadow: 0px 0px 20px 1px rgba(102,102,102,0.75);
+	-moz-box-shadow: 0px 0px 20px 1px rgba(102,102,102,0.75);
 	border-radius: 5px;
 	margin: 3em auto 1em;
 }
