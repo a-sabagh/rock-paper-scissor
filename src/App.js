@@ -5,7 +5,21 @@ import panel from './Components/Panel/Panel.js'
 export default class {
 
 	start = (event) => {
-		alert('starting...')
+		let counter = 3
+		let panel = document.querySelector('.panel')
+		new Promise((resolve,reject)=>{
+			const interval = setInterval(()=>{
+				panel.innerHTML = counter
+				counter--
+				if(counter <= 0){
+					 clearInterval(interval)
+					 resolve('done')
+				}
+			},1000)	
+		}).then((result)=>{
+			let items = ['Paper','Scissor','Rock']
+			document.querySelector('.panel').innerHTML = items[Math.floor(Math.random()*items.length)]
+		})
 	}
 
 	render(){
