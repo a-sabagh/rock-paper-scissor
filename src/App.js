@@ -12,15 +12,15 @@ export default class {
 		let panel = document.querySelector('.panel')
 		new Promise((resolve,reject)=>{
 			const interval = setInterval(()=>{
-				panel.innerHTML = counter
-				counter--
 				if(counter <= 0){
 					 clearInterval(interval)
-					panel.innerHTML = ''
 					 resolve('done')
 				}
+				panel.innerHTML = counter
+				counter--
 			},1000)	
 		}).then((result)=>{
+			panel.innerHTML = ''
 			let items = [rock,paper,scissor]
 			let img = document.createElement('img')
 			img.src = items[Math.floor(Math.random()*items.length)]
