@@ -2,6 +2,9 @@
 	text-align: center;
 }
 .panel {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 	width: 500px;
 	height: 400px;
 	line-height: 400px;
@@ -14,6 +17,12 @@
 	font-size: 6em;
 	font-weight: bolder;
 }
+
+.panel img {
+	width: 300px;
+	height: auto;
+}
+
 button{
 	color: #212529;
 	background-color: #ffc107;
