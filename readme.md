@@ -25,12 +25,4 @@ Once the container is running, open your browser and go to:
 
 http://localhost:8088/
 
-📂 Project Structure
-
-rock-paper-scissor/
-├─ app/                 # Source files (JS/CSS/HTML)
-├─ Dockerfile           # Docker image build
-├─ compose.yaml         # Docker Compose config (optional)
-└─ README.md            # Project documentation
-
 Enjoy playing the game!
