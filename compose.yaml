@@ -1,0 +1,9 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: workstage
+    restart: unless-stopped
+    ports: ["8088:80"]
+    container_name: rock_paper_scissor
